@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — BloomScan</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --pink: #ff69b4;
+    --blue: #4daee0;
+    --bg: #f7f3ff;
+    --surface: #ffffff;
+    --text: #1a1a2e;
+    --muted: #6b6b8a;
+    --border: #e8e0f5;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+    font-weight: 300;
+  }
+
+  header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .header-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.4rem;
+    text-decoration: none;
+  }
+
+  .logo span:first-child { color: var(--pink); }
+  .logo span:last-child { color: var(--blue); }
+
+  .nav-link {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--muted);
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition: color 0.2s;
+  }
+
+  .nav-link:hover { color: var(--pink); }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 56px 24px 100px;
+  }
+
+  .doc-label {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--blue);
+    background: rgba(77,174,224,0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.15;
+    margin-bottom: 12px;
+    color: var(--text);
+  }
+
+  .meta {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.35rem;
+    margin-top: 48px;
+    margin-bottom: 14px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h2::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 22px;
+    background: linear-gradient(to bottom, var(--blue), var(--pink));
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+
+  p { margin-bottom: 16px; color: #2a2a45; }
+
+  ul {
+    margin: 8px 0 16px 0;
+    padding-left: 20px;
+  }
+
+  ul li {
+    margin-bottom: 6px;
+    color: #2a2a45;
+  }
+
+  a { color: var(--blue); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .highlight-box {
+    background: linear-gradient(135deg, rgba(77,174,224,0.08), rgba(255,105,180,0.08));
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 24px 0;
+  }
+
+  .highlight-box p { margin: 0; font-size: 0.95rem; }
+
+  .disclaimer {
+    background: #fff8f0;
+    border: 1px solid #ffd9b0;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 24px 0;
+    font-size: 0.9rem;
+    color: #7a4a1e;
+  }
+
+  .disclaimer p { margin: 0; color: #7a4a1e; }
+
+  .caps {
+    font-size: 0.82rem;
+    line-height: 1.6;
+    color: var(--muted);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 8px 0 16px;
+  }
+
+  .contact-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-top: 48px;
+    text-align: center;
+  }
+
+  .contact-card h2 { justify-content: center; margin-top: 0; }
+  .contact-card h2::before { display: none; }
+
+  .email-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--blue);
+    background: rgba(77,174,224,0.1);
+    padding: 10px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .email-link:hover { background: rgba(77,174,224,0.2); text-decoration: none; }
+
+  footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--muted);
+    padding: 32px 24px;
+    border-top: 1px solid var(--border);
+  }
+
+  @media (max-width: 600px) {
+    main { padding: 36px 16px 80px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span>BLOOM</span><span> SCAN</span>
+    </a>
+    <a href="privacy.html" class="nav-link">Privacy Policy →</a>
+  </div>
+</header>
+
+<main>
+  <div class="doc-label">Legal</div>
+  <h1>Terms of Service</h1>
+  <p class="meta">Macadamia LLC &nbsp;·&nbsp; Effective April 3, 2026 &nbsp;·&nbsp; Last updated April 3, 2026</p>
+
+  <h2>1. Acceptance of Terms</h2>
+  <p>By downloading, installing, or using the BloomScan mobile application ("App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App. These Terms form a legally binding agreement between you and Macadamia LLC ("we," "our," or "us").</p>
+
+  <h2>2. Eligibility and Age Requirements</h2>
+  <div class="highlight-box">
+    <p>You must be at least <strong>13 years of age</strong> to use BloomScan. By using the App, you confirm that you meet this requirement.</p>
+  </div>
+  <p>If you are between 13 and 17 years old, you represent that your parent or legal guardian has reviewed these Terms and consents to your use of the App, including the submission of facial photos for AI analysis. We do not permit use of the App by anyone under 13. If we discover that a user is under 13, we will terminate their access and delete any associated data.</p>
+
+  <h2>3. User Accounts</h2>
+  <p>BloomScan offers an optional Sign In with Apple feature. If you choose to create an account, you must provide accurate information, are responsible for maintaining the security of your device and Apple ID, and must notify us immediately at <a href="mailto:bloomscanhelp@gmail.com">bloomscanhelp@gmail.com</a> if you suspect unauthorized access. We reserve the right to suspend or terminate accounts that violate these Terms. You may also use the App without an account — in that case, all data is stored locally on your device only.</p>
+
+  <h2>4. Permitted Use</h2>
+  <p>BloomScan is licensed to you for personal, non-commercial use only, solely for its intended purpose: capturing and analyzing facial photos for personalized beauty and skincare guidance.</p>
+
+  <h2>5. Prohibited Conduct</h2>
+  <p>You agree not to:</p>
+  <ul>
+    <li>Use the App if you are under 13 years of age</li>
+    <li>Submit photos of any person other than yourself without their explicit consent</li>
+    <li>Submit photos of minors (users under 13) for AI analysis</li>
+    <li>Use the App for any unlawful purpose or in violation of any applicable laws</li>
+    <li>Attempt to reverse-engineer, decompile, or tamper with the App or its source code</li>
+    <li>Transmit harmful, offensive, or illegal content through the App's chat feature</li>
+    <li>Use automated tools, bots, or scripts to interact with the App</li>
+    <li>Impersonate any person or entity</li>
+    <li>Attempt to circumvent any paywall, subscription verification, or access control</li>
+  </ul>
+
+  <h2>6. Camera Use and AI-Powered Features</h2>
+
+  <h3>Face Scanning</h3>
+  <p>By using the scan feature, you grant BloomScan permission to access your camera, acknowledge that your photo and beauty profile are transmitted to Anthropic, Inc. for processing, and agree not to submit photos of individuals under 13 or of other people without their explicit consent.</p>
+
+  <h3>AI Beauty Advisor Chat</h3>
+  <p>Your messages, photos shared in chat, and beauty profile are transmitted to Anthropic's API. The chat is intended for beauty and skincare-related guidance only and is not a substitute for professional medical or dermatological advice.</p>
+
+  <h3>Accuracy Disclaimer</h3>
+  <div class="disclaimer">
+    <p>AI-generated results — including face shape classifications, feature analysis, and skincare recommendations — are generated by an automated system and <strong>may not be perfectly accurate</strong>. Results are for personal guidance purposes only and should not be treated as professional assessments.</p>
+  </div>
+
+  <h2>7. Subscription and In-App Purchases</h2>
+  <ul>
+    <li>Subscriptions are auto-renewing and processed through Apple's App Store</li>
+    <li>Payment is charged to your Apple ID upon confirmation of purchase</li>
+    <li>Subscriptions auto-renew unless cancelled at least 24 hours before the end of the billing period</li>
+    <li>Manage and cancel your subscription anytime in iOS Settings under your Apple ID</li>
+    <li>All purchases are final — refunds are handled per Apple's refund policy at <a href="https://support.apple.com/billing" target="_blank">support.apple.com/billing</a></li>
+    <li>We reserve the right to change subscription pricing or features with reasonable advance notice</li>
+  </ul>
+
+  <h2>8. Intellectual Property</h2>
+  <p>All content, features, and functionality of the App — including the BloomScan name, logo, design, user interface, and software — are the exclusive property of Macadamia LLC, protected by applicable copyright and intellectual property laws. You are granted a limited, non-exclusive, non-transferable, revocable license to use the App on your personal iOS device for personal, non-commercial purposes only.</p>
+
+  <h2>9. User-Submitted Content</h2>
+  <p>You represent that you own or have the right to submit any content you provide, that your content does not violate any third-party rights, and that it does not contain illegal, harmful, or offensive material. You retain ownership of content you submit, and grant us a limited license to transmit it to Anthropic solely as necessary to provide the App's AI features.</p>
+
+  <h2>10. Health and Safety Disclaimer</h2>
+  <div class="disclaimer">
+    <p>BloomScan is a beauty and skincare guidance app. It is <strong>not a medical device</strong> and is <strong>not intended to diagnose, treat, cure, or prevent any medical condition</strong>. AI-generated content is for personal guidance and informational purposes only. If you have concerns about your skin or health, please consult a qualified dermatologist or healthcare professional.</p>
+  </div>
+
+  <h2>11. Disclaimer of Warranties</h2>
+  <div class="caps">
+    THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND. TO THE FULLEST EXTENT PERMITTED BY LAW, MACADAMIA LLC DISCLAIMS ALL WARRANTIES, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, SECURE, OR ERROR-FREE, OR THAT AI-GENERATED RESULTS WILL BE ACCURATE OR SUITABLE FOR YOUR NEEDS.
+  </div>
+
+  <h2>12. Limitation of Liability</h2>
+  <div class="caps">
+    TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, MACADAMIA LLC SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF YOUR USE OF THE APP OR RELIANCE ON ANY AI-GENERATED CONTENT. OUR TOTAL LIABILITY SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID TO US IN THE TWELVE MONTHS PRECEDING THE CLAIM, OR (B) FIFTY U.S. DOLLARS ($50.00).
+  </div>
+
+  <h2>13. Indemnification</h2>
+  <p>You agree to indemnify and hold harmless Macadamia LLC and its officers, directors, employees, and agents from any claims, liabilities, damages, and expenses arising out of your use of the App, violation of these Terms, submission of content that violates third-party rights, or violation of any applicable law.</p>
+
+  <h2>14. Termination</h2>
+  <p>We reserve the right to suspend or terminate your access to the App at any time, with or without cause or notice. Grounds include violation of these Terms, fraudulent activity, or abuse of the App's features. Upon termination, your right to use the App immediately ceases.</p>
+
+  <h2>15. Governing Law and Dispute Resolution</h2>
+  <p>These Terms are governed by the laws of the <strong>State of Utah</strong>, without regard to conflict of law provisions. Any dispute arising from these Terms shall be resolved exclusively in the state or federal courts located in <strong>Davis County, Utah</strong>. You consent to the personal jurisdiction of such courts.</p>
+
+  <h2>16. International Users</h2>
+  <p>BloomScan is available globally. If you use the App from outside the United States, you are responsible for compliance with local laws. For EU and UK users, nothing in these Terms limits any rights you may have under applicable consumer protection or data protection law.</p>
+
+  <h2>17. Severability</h2>
+  <p>If any provision of these Terms is found to be unenforceable, that provision will be limited to the minimum extent necessary, and the remaining provisions will continue in full force and effect.</p>
+
+  <h2>18. Entire Agreement</h2>
+  <p>These Terms, together with our <a href="privacy.html">Privacy Policy</a>, constitute the entire agreement between you and Macadamia LLC regarding your use of the App.</p>
+
+  <h2>19. Changes to These Terms</h2>
+  <p>We may update these Terms from time to time. Material changes will be communicated via an in-app notice. Continued use of the App after changes are posted constitutes your acceptance.</p>
+
+  <div class="contact-card">
+    <h2>Contact Us</h2>
+    <p style="color: var(--muted);">Questions about these Terms? Reach out anytime.</p>
+    <a href="mailto:bloomscanhelp@gmail.com" class="email-link">bloomscanhelp@gmail.com</a>
+    <p style="margin-top: 12px; font-size: 0.85rem; color: var(--muted);">Macadamia LLC · Farmington, Utah</p>
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 Macadamia LLC · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a>
+</footer>
+
+</body>
+</html>

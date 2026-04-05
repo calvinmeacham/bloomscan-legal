@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — BloomScan</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --pink: #ff69b4;
+    --blue: #4daee0;
+    --bg: #f7f3ff;
+    --surface: #ffffff;
+    --text: #1a1a2e;
+    --muted: #6b6b8a;
+    --border: #e8e0f5;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+    font-weight: 300;
+  }
+
+  header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(8px);
+  }
+
+  .header-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.4rem;
+    text-decoration: none;
+  }
+
+  .logo span:first-child { color: var(--pink); }
+  .logo span:last-child { color: var(--blue); }
+
+  .nav-link {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--muted);
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition: color 0.2s;
+  }
+
+  .nav-link:hover { color: var(--pink); }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 56px 24px 100px;
+  }
+
+  .doc-label {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--pink);
+    background: rgba(255,105,180,0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.15;
+    margin-bottom: 12px;
+    color: var(--text);
+  }
+
+  .meta {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.35rem;
+    margin-top: 48px;
+    margin-bottom: 14px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h2::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 22px;
+    background: linear-gradient(to bottom, var(--pink), var(--blue));
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+
+  p { margin-bottom: 16px; color: #2a2a45; }
+
+  ul {
+    margin: 8px 0 16px 0;
+    padding-left: 20px;
+  }
+
+  ul li {
+    margin-bottom: 6px;
+    color: #2a2a45;
+  }
+
+  a { color: var(--pink); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .highlight-box {
+    background: linear-gradient(135deg, rgba(255,105,180,0.08), rgba(77,174,224,0.08));
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 24px 0;
+  }
+
+  .highlight-box p { margin: 0; font-size: 0.95rem; }
+
+  .contact-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-top: 48px;
+    text-align: center;
+  }
+
+  .contact-card h2 { justify-content: center; margin-top: 0; }
+  .contact-card h2::before { display: none; }
+
+  .email-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--pink);
+    background: rgba(255,105,180,0.1);
+    padding: 10px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .email-link:hover { background: rgba(255,105,180,0.2); text-decoration: none; }
+
+  footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--muted);
+    padding: 32px 24px;
+    border-top: 1px solid var(--border);
+  }
+
+  @media (max-width: 600px) {
+    main { padding: 36px 16px 80px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span>BLOOM</span><span> SCAN</span>
+    </a>
+    <a href="terms.html" class="nav-link">Terms of Service →</a>
+  </div>
+</header>
+
+<main>
+  <div class="doc-label">Legal</div>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Macadamia LLC &nbsp;·&nbsp; Effective April 3, 2026 &nbsp;·&nbsp; Last updated April 3, 2026</p>
+
+  <h2>1. Introduction</h2>
+  <p>Welcome to BloomScan ("we," "our," or "us"), operated by Macadamia LLC. This Privacy Policy explains how we collect, use, disclose, and protect your information when you use our mobile application BloomScan (the "App"). Please read this policy carefully. If you do not agree with its terms, please discontinue use of the App.</p>
+
+  <h2>2. Age Requirement</h2>
+  <div class="highlight-box">
+    <p>BloomScan is intended for users who are <strong>13 years of age or older</strong>. We do not knowingly collect personal information from children under 13. If you are under 13, you are not permitted to use the App.</p>
+  </div>
+  <p>If we discover that a user is under 13, we will promptly delete any data associated with that account. If you are between 13 and 17, we recommend reviewing this Privacy Policy with a parent or guardian before using the App.</p>
+
+  <h2>3. Information We Collect</h2>
+
+  <h3>a. Account Information (Optional — Sign In with Apple)</h3>
+  <p>During onboarding, you may optionally sign in using Sign In with Apple. If you choose to do so, we receive from Apple:</p>
+  <ul>
+    <li>Your <strong>Apple ID user identifier</strong> (an anonymized token, not your real Apple ID)</li>
+    <li>Your <strong>name</strong> (only if you choose to share it)</li>
+    <li>Your <strong>email address</strong> (only if you choose to share it)</li>
+  </ul>
+  <p>Sign-in is entirely optional. You may skip it and use the App without an account, though cross-device sync will not be available.</p>
+
+  <h3>b. Beauty & Skin Profile</h3>
+  <p>During onboarding, you provide personal information to personalize your experience. This includes gender, date of birth, skin type, skin concerns, beauty goals, current skincare routine level, daily time available, barriers to skincare, products you currently own, monthly budget, and how you heard about BloomScan.</p>
+  <p>This data is stored <strong>locally on your device</strong> using iOS secure storage. It is not transmitted to or stored on any server operated by Macadamia LLC. However, it is included in requests sent to Anthropic's API to enable personalized AI responses.</p>
+
+  <h3>c. Face Scan Images and Analysis Results</h3>
+  <p>When you perform a scan, your photo is <strong>compressed and transmitted to Anthropic, Inc.</strong> via their API for AI-powered facial feature analysis. Your beauty profile is included with this request. The AI-generated results and your scan photo are stored <strong>locally on your device</strong> only.</p>
+  <p>Images and results are not stored on any server operated by Macadamia LLC. Please review Anthropic's Privacy Policy at <a href="https://www.anthropic.com/privacy" target="_blank">anthropic.com/privacy</a>.</p>
+
+  <h3>d. AI Beauty Advisor Chat</h3>
+  <p>When you use the chat feature, your messages, any images you share, your beauty profile, and your most recent scan results are transmitted to Anthropic's API. Chat history is stored <strong>locally on your device</strong> only.</p>
+
+  <h3>e. Habit and Streak Tracking</h3>
+  <p>Your habit completion history and streak count are stored <strong>locally on your device</strong> and are not transmitted to any external server.</p>
+
+  <h3>f. Push Notifications</h3>
+  <p>If you grant notification permission, BloomScan sends local push notifications to remind you to complete your routine, maintain your streak, and schedule your next scan. These are generated and delivered entirely on-device — no notification data is transmitted externally.</p>
+
+  <h3>g. Subscription and Purchase Data</h3>
+  <p>Purchases are processed entirely by Apple through the App Store. We verify subscription status using Apple's StoreKit and Superwall. We do not collect or store your payment card details.</p>
+
+  <h3>h. Usage Data</h3>
+  <p>We may collect limited technical information (app version, crash data) to maintain App performance. This does not personally identify you.</p>
+
+  <h2>4. How We Use Your Information</h2>
+  <p>We use your information to provide and personalize the App's features, transmit your photo and profile to Anthropic's API for analysis, manage your optional account, verify subscription status, send local push notifications, and comply with applicable law.</p>
+
+  <h2>5. How We Share Your Information</h2>
+  <p>We do not sell your personal information. We share data only with:</p>
+  <ul>
+    <li><strong>Anthropic, Inc.</strong> — for AI face analysis and chat: <a href="https://www.anthropic.com/privacy" target="_blank">anthropic.com/privacy</a></li>
+    <li><strong>Apple, Inc.</strong> — for authentication and purchases: <a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></li>
+    <li><strong>Superwall, Inc.</strong> — for paywall and subscription management: <a href="https://superwall.com/privacy" target="_blank">superwall.com/privacy</a></li>
+    <li><strong>Legal authorities</strong> — when required by law or to protect rights and safety</li>
+  </ul>
+
+  <h2>6. Camera Permission</h2>
+  <p>BloomScan requires camera access to perform face scans. You may revoke this at any time in your iOS Settings, though this will prevent you from using the scanning feature.</p>
+
+  <h2>7. Data Storage and Security</h2>
+  <p>All personal data is stored locally on your device, protected by iOS device encryption and passcode protection. Data transmitted to Anthropic is sent over encrypted HTTPS connections. Macadamia LLC does not operate servers or databases that store your personal information.</p>
+
+  <h2>8. Data Retention and Deletion</h2>
+  <p>Your data is stored locally for as long as you keep the App installed. You can delete your data by removing the App from your device, or contact us at <a href="mailto:bloomscanhelp@gmail.com">bloomscanhelp@gmail.com</a> to request deletion of any account data linked to your Apple ID.</p>
+
+  <h2>9. Your Privacy Rights</h2>
+  <p><strong>All Users:</strong> You have the right to know what information we hold, request its deletion, and withdraw consent at any time.</p>
+  <p><strong>EU and UK Users (GDPR):</strong> You have the right to access, rectify, restrict, and port your personal data, and to lodge a complaint with your local data protection authority. Our legal basis for processing is your consent.</p>
+  <p><strong>California Users (CCPA):</strong> You have the right to know what personal information is collected, request its deletion, and opt out of its sale. We do not sell personal information.</p>
+  <p>To exercise any of these rights, contact us at <a href="mailto:bloomscanhelp@gmail.com">bloomscanhelp@gmail.com</a>.</p>
+
+  <h2>10. Children's Privacy (COPPA)</h2>
+  <p>BloomScan is not directed to children under 13. In compliance with COPPA, if we become aware we have collected information from a child under 13, we will delete it promptly. Parents or guardians who believe their child under 13 has used the App should contact us immediately at <a href="mailto:bloomscanhelp@gmail.com">bloomscanhelp@gmail.com</a>.</p>
+
+  <h2>11. International Users</h2>
+  <p>BloomScan is available globally. Data transmitted to Anthropic's API may be processed in the United States or other countries. By using the App, you consent to this transfer. EU/UK users retain all rights under applicable data protection law.</p>
+
+  <h2>12. Third-Party Services</h2>
+  <ul>
+    <li><strong>Anthropic</strong> — AI processing: <a href="https://www.anthropic.com/privacy" target="_blank">anthropic.com/privacy</a></li>
+    <li><strong>Apple</strong> — Authentication &amp; purchases: <a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></li>
+    <li><strong>Superwall</strong> — Subscription management: <a href="https://superwall.com/privacy" target="_blank">superwall.com/privacy</a></li>
+  </ul>
+
+  <h2>13. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. Material changes will be communicated via an in-app notice. Continued use of the App after changes constitutes acceptance.</p>
+
+  <div class="contact-card">
+    <h2>Contact Us</h2>
+    <p style="color: var(--muted);">Questions or privacy-related requests? We're here to help.</p>
+    <a href="mailto:bloomscanhelp@gmail.com" class="email-link">bloomscanhelp@gmail.com</a>
+    <p style="margin-top: 12px; font-size: 0.85rem; color: var(--muted);">Macadamia LLC · Farmington, Utah</p>
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 Macadamia LLC · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a>
+</footer>
+
+</body>
+</html>
